@@ -1,0 +1,97 @@
+:root{
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    display: grid;
+    justify-content: center;
+    background-color: var(--DarkBlue);
+ 
+
+
+}
+
+.container{
+    padding: 70px 25px;
+    border-radius: 10px;
+    background-color: var(--DarkGrayishBlue);
+    width: 100%;
+    height: auto;
+    margin: 180px 0px;
+    position: relative;
+    word-wrap: break-word;
+    word-break: break-all;
+
+}
+
+p{
+    text-align: center;
+    color: var(--NeonGreen);
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 28px;
+    color: var(--LightCyan);
+    text-align: center;
+    word-break:keep-all;
+}
+.divider{
+    display: grid;
+    place-items:center;
+}
+.divider img{
+    margin-top: 30px;
+    margin-bottom: 10px;
+
+}
+button{
+    border-radius: 50%;
+    border: none;
+    background-color: var(--NeonGreen);
+    z-index: 2;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+    padding: 15px;
+   
+}
+
+button:active{
+    box-shadow: 3px 5px 30px var(--NeonGreen);
+}
+
+button:hover{
+    box-shadow: 3px 5px 30px var(--NeonGreen);
+}
+
+@media(max-width:600px){
+
+    body{
+      margin: 0px 3rem;
+        
+    }
+
+    .container{
+        right: 8%;
+    }
+
+   h2{
+    font-size: 28px;
+    word-break:keep-all;
+
+   }
+
+   .divider img{
+    width: 80%;
+
+}
+
+
+}
