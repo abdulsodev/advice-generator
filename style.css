@@ -10,7 +10,7 @@
 body{
     font-family: 'Manrope', sans-serif;
     display: grid;
-    justify-content: center;
+    place-items: center;
     background-color: var(--DarkBlue);
  
 
@@ -18,15 +18,15 @@ body{
 }
 
 .container{
-    padding: 70px 25px;
+    padding:25px;
     border-radius: 10px;
     background-color: var(--DarkGrayishBlue);
-    width: 100%;
+    width: 500px;
     height: auto;
     margin: 100px 0px;
     position: relative;
-    word-wrap: break-word;
-    word-break: break-all;
+    text-wrap:wrap;
+    
 
 }
 
@@ -46,6 +46,7 @@ h2{
 .divider{
     display: grid;
     place-items:center;
+    margin-bottom: 30px;
 }
 .divider img{
     margin-top: 30px;
@@ -75,13 +76,14 @@ button:hover{
 @media(max-width:600px){
 
     body{
-      margin: 0px 3rem;
-        
+        display: grid;
+        place-items: center;
+        margin: 30px;       
     }
 
     .container{
-        right: 8%;
-        margin: 100px 0px;
+       width:auto;
+       padding: 0px 30px;
 
     }
 
@@ -93,11 +95,13 @@ button:hover{
 
    .divider img{
     width: 80%;
+    margin-bottom: 50px;
 
 }
 button{
 
-    left: 44%;
+    left: 43%;
+    overflow: hidden;
    
 }
 
